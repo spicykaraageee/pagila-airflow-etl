@@ -238,6 +238,9 @@ def run_extract():
 
     try:
         with db.cursor() as conn:
+            # Setiap Extract akan menginput 100 data dengan last_update terbaru ke staging (baik initial maupun incremental), 
+            # Untuk incremental, akan dilakukan pengecekan dengan join ke staging, hanya akan memasukkan data yang belum ada di staging
+            
             extract_customer(conn)
             extract_film(conn)
             extract_store(conn)

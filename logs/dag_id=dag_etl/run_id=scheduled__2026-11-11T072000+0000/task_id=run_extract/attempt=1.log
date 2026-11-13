@@ -1,0 +1,149 @@
+{"timestamp":"2026-11-11T07:24:57.277333Z","level":"info","event":"::group::Pre Execute","logger":"task","filename":"task_runner.py","lineno":2412}
+{"timestamp":"2026-11-11T07:25:03.786410Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags, apache-airflow-providers-common-sql-example-dags, apache-airflow-providers-standard-example-dags","dag_id":"dag_etl","task_id":"run_extract","ti_id":"01a1c97e-cb86-71f6-a067-9c06816480e1","map_index":-1,"run_id":"scheduled__2026-11-11T07:20:00+00:00","try_number":1,"logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":304}
+{"timestamp":"2026-11-11T07:25:03.795034Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_etl.py","dag_id":"dag_etl","task_id":"run_extract","ti_id":"01a1c97e-cb86-71f6-a067-9c06816480e1","map_index":-1,"run_id":"scheduled__2026-11-11T07:20:00+00:00","try_number":1,"logger":"airflow.dag_processing.dagbag.BundleDagBag","filename":"dagbag.py","lineno":460}
+{"timestamp":"2026-11-11T07:25:03.834527Z","level":"info","event":"Extracting data from OLTP","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:03.895716Z","level":"info","event":"Start extracting data from OLTP : Customer","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:03.897620Z","level":"info","event":"\tTable Staging Customer created successfully","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:03.905187Z","level":"info","event":"\tData Customer Before Extract","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:03.907829Z","level":"info","event":"\t\tOLTP : 1000","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:03.908518Z","level":"info","event":"\t\tStaging : 1000","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:03.909243Z","level":"info","event":"\t\tDW : 0","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:03.909981Z","level":"info","event":"\tStart Incremental Extract Data Customer","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:03.910809Z","level":"info","event":"\t\tOLTP : 1000","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:03.911449Z","level":"info","event":"\t\tStaging : 1000","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:03.912065Z","level":"info","event":"\t\tDW : 0","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:03.912680Z","level":"info","event":"Extracting data from OLTP : Customer Finished","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:03.913411Z","level":"info","event":"Start extracting data from OLTP : Film","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:03.914105Z","level":"info","event":"\tTable Staging Film created successfully","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:03.914996Z","level":"info","event":"\tData Film Before Extract","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:03.915708Z","level":"info","event":"\t\tOLTP : 1000","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:03.916404Z","level":"info","event":"\t\tStaging : 1000","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:03.916960Z","level":"info","event":"\t\tDW : 0","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:03.917785Z","level":"info","event":"\tStart Incremental Extract Data Film","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:03.918923Z","level":"info","event":"\t\tOLTP : 1000","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:03.919686Z","level":"info","event":"\t\tStaging : 1000","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:03.920387Z","level":"info","event":"\t\tDW : 0","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:03.921061Z","level":"info","event":"Extracting data from OLTP : Film Finished","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:03.921965Z","level":"info","event":"Start extracting data from OLTP : Store","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:03.922717Z","level":"info","event":"\tTable Staging Store created successfully","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:03.923586Z","level":"info","event":"\tData Store Before Extract","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:03.924559Z","level":"info","event":"\t\tOLTP : 500","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:03.925483Z","level":"info","event":"\t\tStaging : 500","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:03.926475Z","level":"info","event":"\t\tDW : 0","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:03.927202Z","level":"info","event":"\tStart Incremental Extract Data Store","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:03.928079Z","level":"info","event":"\t\tOLTP : 500","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:03.929519Z","level":"info","event":"\t\tStaging : 500","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:03.930428Z","level":"info","event":"\t\tDW : 0","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:03.931300Z","level":"info","event":"Extracting data from OLTP : Store Finished","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:03.932121Z","level":"info","event":"Start extracting data from OLTP : Inventory","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:03.933075Z","level":"info","event":"\tTable Staging Inventory created successfully","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:03.934172Z","level":"info","event":"\tData Inventory Before Extract","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:03.935091Z","level":"info","event":"\t\tOLTP : 4581","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:03.935792Z","level":"info","event":"\t\tStaging : 4581","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:03.936564Z","level":"info","event":"\t\tDW : N/A","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:03.937426Z","level":"info","event":"\tStart Incremental Extract Data Inventory","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:03.938261Z","level":"info","event":"\t\tOLTP : 4581","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:03.938931Z","level":"info","event":"\t\tStaging : 4581","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:03.939488Z","level":"info","event":"\t\tDW : N/A","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:03.940146Z","level":"info","event":"Extracting data from OLTP : Inventory Finished","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:03.940938Z","level":"info","event":"Start extracting data from OLTP : Rental","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:03.941695Z","level":"info","event":"\tTable Staging Rental created successfully","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:03.946690Z","level":"info","event":"\tData Rental Before Extract","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:03.948015Z","level":"info","event":"\t\tOLTP : 51806","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:03.949087Z","level":"info","event":"\t\tStaging : 51806","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:03.950183Z","level":"info","event":"\t\tDW : N/A","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:03.951137Z","level":"info","event":"\tStart Incremental Extract Data Rental","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:03.958771Z","level":"info","event":"\t\tOLTP : 51806","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:03.959821Z","level":"info","event":"\t\tStaging : 51806","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:03.960499Z","level":"info","event":"\t\tDW : N/A","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:03.961092Z","level":"info","event":"Extracting data from OLTP : Rental Finished","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:03.961844Z","level":"info","event":"Start extracting data from OLTP : Payment","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:03.962773Z","level":"info","event":"\tTable Staging Payment created successfully","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.047765Z","level":"info","event":"\tData Payment Before Extract","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.049909Z","level":"info","event":"\t\tOLTP : 51062","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.051138Z","level":"info","event":"\t\tStaging : 51062","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.052146Z","level":"info","event":"\t\tDW : 0","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.053178Z","level":"info","event":"\tStart Incremental Extract Data Payment","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.061717Z","level":"info","event":"\t\tOLTP : 51062","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.063179Z","level":"info","event":"\t\tStaging : 51062","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.065212Z","level":"info","event":"\t\tDW : 0","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.066161Z","level":"info","event":"Extracting data from OLTP : Payment Finished","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.145296Z","level":"warning","event":"The `airflow.operators.python.PythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.PythonOperator'`.","category":"UserWarning","filename":"/opt/airflow/dags/dag_etl.py","lineno":4,"dag_id":"dag_etl","task_id":"run_extract","ti_id":"01a1c97e-cb86-71f6-a067-9c06816480e1","map_index":-1,"run_id":"scheduled__2026-11-11T07:20:00+00:00","try_number":1,"logger":"py.warnings"}
+{"timestamp":"2026-11-11T07:25:04.159728Z","level":"info","event":"Worker startup parse complete","bundle_name":"dags-folder","bundle_version":null,"dag_file":"dag_etl.py","dag_id":"dag_etl","bundle_prepare_ms":19,"dag_file_parse_ms":370,"task_id":"run_extract","ti_id":"01a1c97e-cb86-71f6-a067-9c06816480e1","map_index":-1,"run_id":"scheduled__2026-11-11T07:20:00+00:00","try_number":1,"logger":"task","filename":"task_runner.py","lineno":1073}
+{"timestamp":"2026-11-11T07:25:04.250675Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.251650Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.252400Z","level":"info","event":"Current task name:run_extract","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.253068Z","level":"info","event":"Dag name:dag_etl","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.252303Z","level":"info","event":"::endgroup::","dag_id":"dag_etl","task_id":"run_extract","ti_id":"01a1c97e-cb86-71f6-a067-9c06816480e1","map_index":-1,"run_id":"scheduled__2026-11-11T07:20:00+00:00","try_number":1,"logger":"task","filename":"task_runner.py","lineno":2232}
+{"timestamp":"2026-11-11T07:25:04.305514Z","level":"info","event":"Start extracting data from OLTP : Customer","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.307146Z","level":"info","event":"\tTable Staging Customer created successfully","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.313609Z","level":"info","event":"\tData Customer Before Extract","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.314380Z","level":"info","event":"\t\tOLTP : 1000","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.315229Z","level":"info","event":"\t\tStaging : 1000","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.315938Z","level":"info","event":"\t\tDW : 0","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.316566Z","level":"info","event":"\tStart Incremental Extract Data Customer","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.317373Z","level":"info","event":"\t\tOLTP : 1000","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.318010Z","level":"info","event":"\t\tStaging : 1000","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.318693Z","level":"info","event":"\t\tDW : 0","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.319486Z","level":"info","event":"Extracting data from OLTP : Customer Finished","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.320236Z","level":"info","event":"Start extracting data from OLTP : Film","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.320989Z","level":"info","event":"\tTable Staging Film created successfully","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.323518Z","level":"info","event":"\tData Film Before Extract","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.324163Z","level":"info","event":"\t\tOLTP : 1000","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.324786Z","level":"info","event":"\t\tStaging : 1000","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.325438Z","level":"info","event":"\t\tDW : 0","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.326118Z","level":"info","event":"\tStart Incremental Extract Data Film","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.326785Z","level":"info","event":"\t\tOLTP : 1000","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.327376Z","level":"info","event":"\t\tStaging : 1000","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.328042Z","level":"info","event":"\t\tDW : 0","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.328721Z","level":"info","event":"Extracting data from OLTP : Film Finished","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.329570Z","level":"info","event":"Start extracting data from OLTP : Store","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.330304Z","level":"info","event":"\tTable Staging Store created successfully","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.331146Z","level":"info","event":"\tData Store Before Extract","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.331719Z","level":"info","event":"\t\tOLTP : 500","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.332332Z","level":"info","event":"\t\tStaging : 500","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.332890Z","level":"info","event":"\t\tDW : 0","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.333681Z","level":"info","event":"\tStart Incremental Extract Data Store","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.334383Z","level":"info","event":"\t\tOLTP : 500","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.335042Z","level":"info","event":"\t\tStaging : 500","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.335723Z","level":"info","event":"\t\tDW : 0","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.336352Z","level":"info","event":"Extracting data from OLTP : Store Finished","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.337621Z","level":"info","event":"Start extracting data from OLTP : Inventory","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.338492Z","level":"info","event":"\tTable Staging Inventory created successfully","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.339239Z","level":"info","event":"\tData Inventory Before Extract","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.339959Z","level":"info","event":"\t\tOLTP : 4581","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.340557Z","level":"info","event":"\t\tStaging : 4581","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.341038Z","level":"info","event":"\t\tDW : N/A","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.341628Z","level":"info","event":"\tStart Incremental Extract Data Inventory","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.342735Z","level":"info","event":"\t\tOLTP : 4581","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.343405Z","level":"info","event":"\t\tStaging : 4581","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.344046Z","level":"info","event":"\t\tDW : N/A","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.344743Z","level":"info","event":"Extracting data from OLTP : Inventory Finished","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.345367Z","level":"info","event":"Start extracting data from OLTP : Rental","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.346089Z","level":"info","event":"\tTable Staging Rental created successfully","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.350892Z","level":"info","event":"\tData Rental Before Extract","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.351492Z","level":"info","event":"\t\tOLTP : 51806","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.352264Z","level":"info","event":"\t\tStaging : 51806","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.352933Z","level":"info","event":"\t\tDW : N/A","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.353567Z","level":"info","event":"\tStart Incremental Extract Data Rental","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.362512Z","level":"info","event":"\t\tOLTP : 51806","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.363575Z","level":"info","event":"\t\tStaging : 51806","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.364232Z","level":"info","event":"\t\tDW : N/A","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.364924Z","level":"info","event":"Extracting data from OLTP : Rental Finished","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.365553Z","level":"info","event":"Start extracting data from OLTP : Payment","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.366211Z","level":"info","event":"\tTable Staging Payment created successfully","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.461867Z","level":"info","event":"\tData Payment Before Extract","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.462760Z","level":"info","event":"\t\tOLTP : 51062","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.463340Z","level":"info","event":"\t\tStaging : 51062","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.464375Z","level":"info","event":"\t\tDW : 0","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.465197Z","level":"info","event":"\tStart Incremental Extract Data Payment","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.473565Z","level":"info","event":"\t\tOLTP : 51062","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.474257Z","level":"info","event":"\t\tStaging : 51062","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.475026Z","level":"info","event":"\t\tDW : 0","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.475877Z","level":"info","event":"Extracting data from OLTP : Payment Finished","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.474657Z","level":"info","event":"Done. Returned value was: None","dag_id":"dag_etl","task_id":"run_extract","ti_id":"01a1c97e-cb86-71f6-a067-9c06816480e1","map_index":-1,"run_id":"scheduled__2026-11-11T07:20:00+00:00","try_number":1,"logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":233}
+{"timestamp":"2026-11-11T07:25:04.474827Z","level":"info","event":"::group::Post Execute","dag_id":"dag_etl","task_id":"run_extract","ti_id":"01a1c97e-cb86-71f6-a067-9c06816480e1","map_index":-1,"run_id":"scheduled__2026-11-11T07:20:00+00:00","try_number":1,"logger":"task","filename":"task_runner.py","lineno":1580}
+{"timestamp":"2026-11-11T07:25:04.509822Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.510872Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.511704Z","level":"info","event":"Task operator:<Task(PythonOperator): run_extract>","logger":"task.stdout"}
+{"timestamp":"2026-11-11T07:25:04.510076Z","level":"info","event":"::endgroup::","dag_id":"dag_etl","task_id":"run_extract","ti_id":"01a1c97e-cb86-71f6-a067-9c06816480e1","map_index":-1,"run_id":"scheduled__2026-11-11T07:20:00+00:00","try_number":1,"logger":"task","filename":"task_runner.py","lineno":2379}

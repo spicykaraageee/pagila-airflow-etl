@@ -4,7 +4,7 @@ from airflow import DAG
 from airflow.operators.python import PythonOperator
 
 from script.extract import run_extract
-# from script.insert import run_insert
+from script.loading import run_loading
 
 with DAG(
     "dag_etl",
@@ -17,5 +17,10 @@ with DAG(
         task_id="run_extract",
         python_callable=run_extract
     )
+    
+    loading = PythonOperator(
+        task_id="run_loading",
+        python_callable=run_loading
+    )
 
-    extract
+    extract >> loading

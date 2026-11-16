@@ -8,8 +8,8 @@ def connection():
         dbname="pagila3",
         user="postgres",
         password="123456",
-        host="host.docker.internal",
-        # host="localhost",
+        # host="host.docker.internal", #running in docker container
+        host="localhost", #running in local machine
         port="5432"
     )
 

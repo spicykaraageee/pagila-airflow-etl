@@ -1,15 +1,13 @@
 import psycopg2
 import logging
 
-print("Extracting data from OLTP")
-
 def connection():
     return psycopg2.connect(
         dbname="pagila3",
         user="postgres",
         password="123456",
-        # host="host.docker.internal", #running in docker container
-        host="localhost", #running in local machine
+        host="host.docker.internal", #running in docker container
+        # host="localhost", #running in local machine
         port="5432"
     )
 
@@ -58,7 +56,7 @@ def extract_customer(conn):
         print("\tStart Incremental Extract Data Customer") 
         insert_stg_customer = """INSERT INTO staging.stg_customer(customer_id, first_name, last_name, email, batch_id, extract_time) 
                                     SELECT c.customer_id, c.first_name, c.last_name, c.email, 
-                                        ('B' || LPAD((SUBSTRING((select batch_id FROM staging.stg_customer ORDER extract_time desc limit 1) FROM 2)::INT + 1)::TEXT, 3, '0')) as batch, CURRENT_TIMESTAMP FROM public.customer c 
+                                        ('B' || LPAD((SUBSTRING((select batch_id FROM staging.stg_customer ORDER BY extract_time desc limit 1) FROM 2)::INT + 1)::TEXT, 3, '0')) as batch, CURRENT_TIMESTAMP FROM public.customer c 
                                     LEFT JOIN staging.stg_customer sc USING(customer_id) 
                                     WHERE sc.customer_id IS NULL 
                                     ORDER BY c.last_update LIMIT 100;"""
@@ -300,9 +298,10 @@ def extract_payment(conn):
 
 def run_extract():
     db = connection()
-
+    
     try:
         with db.cursor() as conn:
+            print("Extracting data from OLTP")
             # Setiap Extract akan menginput 100 data dengan last_update terbaru ke staging (baik initial maupun incremental), 
             # Untuk incremental, akan dilakukan pengecekan dengan join ke staging, hanya akan memasukkan data yang belum ada di staging
             

@@ -1,8 +1,20 @@
 import psycopg2
 import logging
 
-from extract import connection
-from extract import print_table_count
+def connection():
+    return psycopg2.connect(
+        dbname="pagila3",
+        user="postgres",
+        password="123456",
+        host="host.docker.internal", #running in docker container
+        # host="localhost", #running in local machine
+        port="5432"
+    )
+
+def print_table_count(rows):
+    print(f"\t\tOLTP : {rows[0]}")
+    print(f"\t\tStaging : {rows[1]}")
+    print(f"\t\tDW : {rows[2] if len(rows) > 2 else 'N/A'}")
 
 print("Loading data to Data Warehouse (DW)")
 
@@ -413,7 +425,7 @@ def run_loading():
             load_store(conn)
             load_date(conn)
             load_fact_payment(conn)
-        # db.commit()
+        db.commit()
     except Exception as e:
         print("Error while Loading to DW")
         logging.error(e)
